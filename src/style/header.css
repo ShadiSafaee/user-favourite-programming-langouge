@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background: linear-gradient(90deg, #559e8a 50%, #0f1010);
+}
+.header img {
+  min-width: 100px;
+  max-width: 200px;
+  border-radius: 20px;
+}
+.header h1 {
+  color: #ffd7d3;
+}
