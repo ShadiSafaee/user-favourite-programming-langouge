@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../style/info.css";
 
-const Info = ({ search }) => {
-  return <article className="info_article">{search}</article>;
+const Info = ({ favLang }) => {
+  return (
+    <article className="info_article">
+      <h2>User's favourite programming language: {favLang}</h2>
+    </article>
+  );
 };
 
 export default Info;

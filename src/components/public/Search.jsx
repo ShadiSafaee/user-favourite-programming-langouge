@@ -7,7 +7,6 @@ const Search = ({ search, setSearch, getLangsHandler }) => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          console.log(search);
           getLangsHandler();
         }}
       >
