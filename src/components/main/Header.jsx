@@ -4,7 +4,7 @@ import "../../style/header.css";
 const Header = () => {
   const [info, setInfo] = useState(false);
   const clickHandler = () => {
-    return setInfo(true);
+    return setInfo(!info);
   };
   return (
     <header className="header">
