@@ -1,0 +1,24 @@
+.search_article {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search_article form {
+  display: flex;
+  flex-direction: column;
+}
+.search_article form button {
+  margin: 2em;
+  transition: all 0.7s;
+}
+.search_article form button,
+.search_article form input {
+  font-size: 1.3rem;
+  padding: 1em;
+  border-radius: 20px;
+  box-shadow: inset 0 0 8px 0px black;
+  cursor: pointer;
+}
+.search_article form button:hover {
+  background: linear-gradient(90deg, gold, #9d625c);
+}

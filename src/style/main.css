@@ -1,0 +1,30 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://images.pexels.com/photos/248159/pexels-photo-248159.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-position: center center;
+  background-size: cover;
+  animation: zoom 20s infinite alternate;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+.main_article {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@keyframes zoom {
+  from {
+    transform: scale(1.01);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}

@@ -13,7 +13,7 @@ const Search = ({ search, setSearch, getLangsHandler }) => {
         <input
           type="text"
           value={search}
-          placeholder="type a username.."
+          placeholder="type a GitHub username.."
           onChange={(e) => setSearch(e.target.value.replace(/\s/g, ""))}
         />
         <button type="submit">Search</button>
