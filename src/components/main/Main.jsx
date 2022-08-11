@@ -13,7 +13,7 @@ const Main = () => {
     //fisrt of all we need to access repos, so we need to fetch repos' names
     const url = `https://api.github.com/users/${search}/repos?per_page=100`;
     //validation for input field
-    if (search.length === 0) {
+    if (!search || search.length === 0) {
       return alert("please fill the box first!");
     }
     //initializing an empty array to push every lang into it
@@ -58,12 +58,16 @@ const Main = () => {
     for (const x of notNullLangs) {
       obj[x] = 0;
     }
-    //
+    //incrementing the number of each lang based on their frequency
     for (const x of notNullLangs) {
       obj[x] += 1;
     }
     //converting obj to arr and then sorting them Descendingly, index[0] of arr is the most fav programming language
-    const freqValue = Object.entries(obj).sort((a, b) => b[1] - a[1])[0][0];
+    const sortedArray = Object.entries(obj).sort((a, b) => b[1] - a[1]);
+    const freqValue =
+      sortedArray.length === 0
+        ? "User doesn't have any Repos"
+        : sortedArray[0][0];
     setFavLang(freqValue);
   };
 
