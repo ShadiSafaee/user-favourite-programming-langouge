@@ -44,5 +44,6 @@
   .header {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, #ec8b10 24%, #0f1010);
   }
 }

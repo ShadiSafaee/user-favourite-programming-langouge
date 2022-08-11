@@ -13,7 +13,7 @@ const Main = () => {
     //fisrt of all we need to access repos, so we need to fetch repos' names
     const url = `https://api.github.com/users/${search}/repos?per_page=100`;
     //validation for input field
-    if (!search || search.length === 0) {
+    if (search.length === 0) {
       return alert("please fill the box first!");
     }
     //initializing an empty array to push every lang into it
